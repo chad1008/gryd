@@ -690,7 +690,7 @@ a {
   color: royalblue;
 }
 a:visited {
-  color: orange;
+  color: purple;
 }
 a:hover, a:focus, a:active {
   color: midnightblue;
@@ -700,6 +700,11 @@ a:focus {
 }
 a:hover, a:active {
   outline: 0;
+}
+
+.title-box a {
+    color: white;
+    text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -782,6 +787,51 @@ body {
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
+}
+
+.archive .hentry,
+.blog .hentry,
+.search-results .hentry {
+  width: 50vw;
+  height: 28vw;
+  float: left;
+  background-size: cover;
+  background-position: center;
+  background-color: #00c3e0;
+  margin-bottom: 0;
+}
+
+.archive .hentry:nth-last-of-type(even),
+.blog .hentry:nth-last-of-type(even),
+.search-results .hentry:nth-last-of-type(even) {
+    clear: right;
+}
+
+.archive .hentry .title-box,
+.blog .hentry .title-box,
+.search-results .hentry .title-box {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 25px;
+  background-color: rgba(0,0,0,.5);
+  overflow: hidden;
+  transition: .25s ease-in-out;
+}
+
+.archive .hentry:hover .title-box,
+.blog .hentry:hover .title-box,
+.search-results .hentry:hover .title-box {
+    background-color: rgba(0,0,0,.4);
+    transition: .5s ease-in-out;
 }
 
 /*--------------------------------------------------------------
