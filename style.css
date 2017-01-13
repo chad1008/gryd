@@ -730,6 +730,7 @@ a.entry-link {
     font-size: 28px;
     color: white;
     text-decoration: none;
+    text-shadow: #333 2px 2px 2px;
 }
 
 
