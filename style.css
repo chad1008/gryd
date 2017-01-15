@@ -545,6 +545,32 @@ hr {
     margin-bottom: 1.5em;
 }
 
+.entry-title {
+    margin: 0;
+}
+
+.entry-title:before,
+.entry-title:after {
+    display: block;
+    width: 0;
+    height: 4px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: #333 2px 2px 2px;
+    content: "";
+    transition: .25s;
+    position: relative;
+    left: -10px;
+    border-radius: 3px;
+}
+
+.hentry:hover .entry-title:before,
+.hentry:hover .entry-title:after {
+    width: 120px;
+    transition-property: width;
+    transition: .5s;
+}
+
 /*--------------------------------------------------------------
 # Lists
 --------------------------------------------------------------*/
@@ -733,8 +759,6 @@ a.entry-link {
     text-shadow: #333 2px 2px 2px;
 }
 
-
-
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
@@ -847,7 +871,7 @@ body {
 .blog .hentry:hover .entry-thumbnail,
 .search-results .hentry:hover .entry-thumbnail {
     transform: none;
-    transition: 3s ease-in-out;
+    transition: 3s linear;
 
 }
 
