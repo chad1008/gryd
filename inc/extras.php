@@ -32,3 +32,18 @@ function gryd_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'gryd_body_classes' );
+
+/**
+ * Add a custom classes to the array of post classes.
+ */
+function gryd_post_classes( $classes ) {
+
+	if ( ! has_post_thumbnail() ) {
+		$classes[] = 'without-featured-image';
+	} else {
+		$classes[] = 'with-featured-image';
+	}
+
+	return $classes;
+}
+add_filter( 'post_class', 'gryd_post_classes' );
