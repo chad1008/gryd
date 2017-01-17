@@ -24,7 +24,7 @@ function gryd_custom_header_setup() {
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 2000,
-		'height'                 => 250,
+		'height'                 => 1200,
 		'flex-height'            => true,
 		'video'                  => true,
 		'wp-head-callback'       => 'gryd_header_style',

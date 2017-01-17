@@ -774,7 +774,7 @@ html {
 }
 
 body {
-    background: #fff;
+    background: #000;
     /* Fallback for when there is no custom background color defined. */
 }
 
@@ -799,6 +799,45 @@ body {
         clear: both;
         width: 100%;
     }
+}
+
+/*--------------------------------------------------------------
+## Header
+# Borrowed greatly from Twenty Seventeen video header styles https://wordpress.org/themes/twentyseventeen/
+--------------------------------------------------------------*/
+.custom-header {
+    display: table;
+    height: 300px;
+    height: 75vh;
+    width: 100%;
+}
+
+.custom-header-media {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.wp-custom-header iframe,
+.wp-custom-header img,
+.wp-custom-header video {
+    position: fixed;
+    height: auto;
+    left: 50%;
+    max-width: 1000%;
+    min-height: 100%;
+    min-width: 100%;
+    min-width: 100vw; /* vw prevents 1px gap on left that 100% has */
+    width: auto;
+    top: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
 /*--------------------------------------------------------------
@@ -858,10 +897,6 @@ body {
     background-color: #00c3e0;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
     overflow: hidden;
     transition: .25s ease-in-out;
     transform: scale(1.03);
@@ -884,6 +919,10 @@ body {
 .archive .hentry .title-box,
 .blog .hentry .title-box,
 .search-results .hentry .title-box {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;

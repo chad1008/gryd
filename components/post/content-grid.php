@@ -12,6 +12,7 @@
 <?php $thumbnail_background = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="entry-thumbnail" style="background-image:url('<?php echo esc_url( $thumbnail_background['0'] ); ?>')"></div>
 	<a class="entry-link" href="<?php esc_url( get_permalink() ) ?>" rel="bookmark">
 		<div class="title-box">
 			<header class="entry-header">
@@ -26,6 +27,5 @@
 			</header>
 		</div>
 	</a>
-	<div class="entry-thumbnail" style="background-image:url('<?php echo esc_url( $thumbnail_background['0'] ); ?>')"></div>
 
 </article><!-- #post-## -->
