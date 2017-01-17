@@ -925,7 +925,7 @@ body {
     border-left: 1px solid rgba(0, 0, 0, .5);
 }
 
-.hentry + .hentry + .without-featured-image {
+.without-featured-image + .hentry + .without-featured-image {
     border-top: 1px solid rgba(0, 0, 0, .5);
 }
 
