@@ -15,4 +15,6 @@
 		<?php the_custom_header_markup(); ?>
 	</div>
 
+	<?php get_template_part( 'components/header/site', 'branding' ); ?>
+
 </div><!-- .custom-header -->

@@ -840,6 +840,29 @@ body {
     transform: translateX(-50%) translateY(-50%);
 }
 
+#masthead {
+    text-align: center;
+    margin: 16.5vh 40px;
+}
+
+.branding-wrap {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
 /*--------------------------------------------------------------
 ## Single Column / No Active Sidebar
 --------------------------------------------------------------*/

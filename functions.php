@@ -54,10 +54,10 @@ function gryd_setup() {
 	 * Add support for core custom logo.
 	 */
 	add_theme_support( 'custom-logo', array(
-		'height'      => 200,
-		'width'       => 200,
+		'height'      => 300,
+		'width'       => 300,
 		'flex-width'  => true,
-		'flex-height' => true,
+		'flex-height' => false,
 	) );
 
 	/*
