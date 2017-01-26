@@ -13,7 +13,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-thumbnail" style="background-image:url('<?php echo esc_url( $thumbnail_background['0'] ); ?>')"></div>
-	<a class="entry-link" href="<?php esc_url( get_permalink() ) ?>" rel="bookmark">
+	<a class="entry-link" href="<?php esc_url( get_permalink( $post->ID ) ) ?>" rel="bookmark">
 		<div class="title-box">
 			<header class="entry-header">
 				<?php

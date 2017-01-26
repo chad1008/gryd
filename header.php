@@ -26,10 +26,10 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<?php get_template_part( 'components/header/header', 'image' ); ?>
-		
 		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
 
+		<?php get_template_part( 'components/header/header', 'image' ); ?>
+		
 		<?php gryd_social_menu(); ?>
 
 	</header>

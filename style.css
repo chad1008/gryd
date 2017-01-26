@@ -616,6 +616,26 @@ table {
     display: block;
     float: left;
     width: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+    padding: 10px 20px;
+    background-color: rgba( 0, 0, 0, .3);
+}
+
+.main-navigation a,
+.main-navigation a:active,
+.main-navigation a:visited {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 10px;
+    transition: .25s ease-in-out;
+}
+
+.main-navigation a:hover {
+    color: #80e1f0;
+    transition: .5s ease-in-out;
 }
 
 .main-navigation ul {
@@ -680,7 +700,7 @@ table {
     }
 
     .main-navigation ul {
-        display: block;
+        display: inline-block;
     }
 }
 
