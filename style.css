@@ -729,6 +729,14 @@ a:hover, a:active {
     outline: 0;
 }
 
+.site-title a,
+.site-title a:hover,
+.site-title a:active,
+.site-title a:visited {
+    color: #fff;
+    text-decoration: none
+}
+
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
@@ -840,27 +848,32 @@ body {
     transform: translateX(-50%) translateY(-50%);
 }
 
-#masthead {
-    text-align: center;
-    margin: 16.5vh 40px;
-}
-
 .branding-wrap {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    justify-content: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
     align-items: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    text-align: center;
+    position: relative;
     height: 100%;
+    text-align: center;
+}
+
+.site-branding {
+    text-shadow: #333 2px 2px 2px;
+    margin: 0 auto;
+}
+
+.site-title {
+    font-size: 48px;
+}
+
+.site-description {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 24px;
 }
 
 /*--------------------------------------------------------------
