@@ -560,7 +560,6 @@ hr {
     content: "";
     transition: .25s;
     position: relative;
-    left: -10px;
     border-radius: 3px;
 }
 
