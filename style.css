@@ -867,6 +867,35 @@ body {
     transform: translateX(-50%) translateY(-50%);
 }
 
+#wp-custom-header-video-button {
+    position: absolute;
+    bottom: 150px;
+    right: 50px;
+    z-index: 2;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: #ccc;
+    box-shadow: 0 0 2px 1px #333;
+    text-shadow: 1px 1px 3px #333;
+    border-radius: 2px;
+    border-color: #ccc;
+    opacity: .5;
+    transition: .25s;
+}
+
+#wp-custom-header-video-button:hover {
+    border-color: #ccc;
+    background-color: rgba(204, 204, 204, .5);
+    color: #333;
+    text-shadow: none;
+    opacity: 1;
+}
+
+button#wp-custom-header-video-button:focus {
+    outline: none;
+}
+
 .branding-wrap {
     display: -ms-flexbox;
     display: -webkit-flex;

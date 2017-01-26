@@ -72,3 +72,12 @@ function gryd_header_style() {
 	<?php
 }
 endif; // gryd_header_style
+
+/** Make the play/pause buttons pretty */
+
+function gryd_video_controls( $settings ) {
+	$settings['l10n']['play'] = '<span class="screen-reader-text">' . __( 'Play background video', 'gryd' ) . '</span>' . '<span class="dashicons dashicons-controls-play"></span>';
+	$settings['l10n']['pause'] = '<span class="screen-reader-text">' . __( 'Pause background video', 'gryd' ) . '</span>' . '<span class="dashicons dashicons-controls-pause"></span>';
+	return $settings;
+}
+add_filter( 'header_video_settings', 'gryd_video_controls' );
