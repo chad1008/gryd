@@ -627,8 +627,13 @@ table {
     position: fixed;
     text-align: center;
     z-index: 2;
-    padding: 10px 20px;
+    padding: 0 20px;
     background-color: rgba( 0, 0, 0, .3);
+    text-shadow: #333 2px 2px 2px;
+}
+
+#top-menu-wrap {
+    margin-bottom: -6px;
 }
 
 .main-navigation a,
@@ -637,11 +642,17 @@ table {
     color: #fff;
     font-size: 18px;
     font-weight: bold;
-    padding: 0 10px;
+    padding: 10px 15px;
     transition: .25s ease-in-out;
 }
 
-.main-navigation a:hover {
+.main-navigation a:hover,
+.main-navigation li:hover > a {
+    background-color: rgba(83, 83, 83, .8);
+}
+
+.main-navigation a:hover,
+.main-navigation .current-menu-item a  {
     color: #80e1f0;
     transition: .5s ease-in-out;
 }
@@ -660,6 +671,9 @@ table {
     top: 1.5em;
     left: -999em;
     z-index: 99999;
+    max-height: 0;
+    overflow: hidden;
+    background-color: rgba( 0, 0, 0, .3);
 }
 
 .main-navigation ul ul ul {
@@ -677,7 +691,11 @@ table {
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-    left: auto;
+    left: 0;
+    top: 47px;
+    max-height: 500px;
+    transition: .75s;
+    transition-property: max-height;
 }
 
 .main-navigation li {
@@ -792,7 +810,6 @@ a.entry-link {
     font-size: 28px;
     color: white;
     text-decoration: none;
-    text-shadow: #333 2px 2px 2px;
 }
 
 /*--------------------------------------------------------------
