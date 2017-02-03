@@ -810,6 +810,7 @@ a.entry-link {
     font-size: 28px;
     color: white;
     text-decoration: none;
+    text-shadow: #333 2px 2px 2px;
 }
 
 /*--------------------------------------------------------------
@@ -1113,6 +1114,19 @@ button#wp-custom-header-video-button:focus {
 
 .widget select {
     max-width: 100%;
+}
+
+/* Footer Widgets */
+#tertiary {
+    position: absolute;
+    background: #535353;
+    width: 100%;
+}
+
+#tertiary .widget-area {
+    width: 33%;
+    padding: 20px;
+    float: left;
 }
 
 /*--------------------------------------------------------------
