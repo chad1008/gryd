@@ -702,6 +702,7 @@ table {
     z-index: 99999;
     max-height: 0;
     background-color: rgba(0, 0, 0, .3);
+    text-align: left;
 }
 
 .main-navigation ul:not(:hover) {
@@ -718,7 +719,7 @@ table {
 }
 
 .main-navigation ul ul a {
-    width: 200px;
+    width: 240px;
 }
 
 .main-navigation ul li:hover > ul,
