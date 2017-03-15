@@ -19,6 +19,11 @@ function gryd_jetpack_setup() {
 		'container' => 'main',
 		'render'	=> 'gryd_infinite_scroll_render',
 		'footer'	=> 'page',
+		'footer_widgets' => array(
+			'sidebar-2',
+			'sidebar-3',
+			'sidebar-4',
+		)
 	) );
 
 	// Add theme support for Responsive Videos.
