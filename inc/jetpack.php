@@ -23,7 +23,8 @@ function gryd_jetpack_setup() {
 			'sidebar-2',
 			'sidebar-3',
 			'sidebar-4',
-		)
+		),
+		'posts_per_page' => 4,
 	) );
 
 	// Add theme support for Responsive Videos.
@@ -46,7 +47,7 @@ function gryd_infinite_scroll_render() {
 		if ( is_search() ) :
 			get_template_part( 'components/post/content', 'search' );
 		else :
-			get_template_part( 'components/post/content', get_post_format() );
+			get_template_part( 'components/post/content', 'grid' );
 		endif;
 	}
 }
