@@ -633,7 +633,7 @@ dd {
     border-top: 1px solid #dbdbdb;
 }
 
-.footer-widget-area  .widget_text ul li {
+.footer-widget-area .widget_text ul li {
     border-top: 0;
 }
 
@@ -701,8 +701,11 @@ table {
     left: -999em;
     z-index: 99999;
     max-height: 0;
-    overflow: hidden;
     background-color: rgba(0, 0, 0, .3);
+}
+
+.main-navigation ul:not(:hover) {
+    overflow: hidden;
 }
 
 .main-navigation ul ul ul {
@@ -725,6 +728,11 @@ table {
     max-height: 500px;
     transition: .75s;
     transition-property: max-height;
+}
+
+.main-navigation ul li:hover > ul ul,
+.main-navigation ul li.focus > ul ul {
+    top: 0;
 }
 
 .main-navigation li {
@@ -784,18 +792,24 @@ table {
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
+a {
+    transition: .25s linear;
+}
+
 a,
 a:visited {
     color: #80e1f0;
     text-decoration: none;
 }
 
-a:hover, a:focus, a:active {
-    color: midnightblue;
+.footer-widget-area a:hover,
+.footer-widget-area a:focus,
+.footer-widget-area a:active {
+    color: #fcefef;
 }
 
 a:focus {
-    outline: thin dotted;
+    outline: none;
 }
 
 a:hover, a:active {
