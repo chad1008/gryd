@@ -612,11 +612,15 @@ dd {
 
 .widget ul {
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .widget ul li {
     padding: 1rem 0;
+}
+
+.widget li li:last-of-type {
+    padding-bottom: 0;
 }
 
 .widget ul ul {
@@ -635,6 +639,7 @@ dd {
 
 .footer-widget-area .widget_text ul li {
     border-top: 0;
+    padding-top: 0;
 }
 
 /*--------------------------------------------------------------
