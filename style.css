@@ -879,6 +879,11 @@ body {
     }
 }
 
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /*--------------------------------------------------------------
 ## Header
 # Borrowed greatly from Twenty Seventeen video header styles https://wordpress.org/themes/twentyseventeen/
