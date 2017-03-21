@@ -1195,6 +1195,34 @@ button#wp-custom-header-video-button:focus {
     display: block;
 }
 
+#infinite-handle {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 100%
+}
+
+#infinite-handle span {
+    padding: 0;
+}
+
+#infinite-handle span button,
+#infinite-handle span button:hover,
+#infinite-handle span button:focus {
+    padding: 10px;
+    font-size: 1.7em;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    background-color: #535353;
+    text-shadow: none;
+    outline: none;
+}
+
+#infinite-handle span button:hover {
+    background-color: #dbdbdb;
+    color: #535353;
+}
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
