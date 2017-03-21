@@ -18,11 +18,11 @@
             if (has_thumbs_length >= 2) {
                 // If the current and previous post had no image, add the narrow class
                 if ($(this).hasClass('without-featured-image') && has_thumbs[1] === true) {
-                    $(this).addClass('NARROW')
+                    $(this).addClass('grid-top-border-narrow')
                 }
                 // If current post and the second to last post had no image, add the wide class
                 if ($(this).hasClass('without-featured-image') && has_thumbs[0] === true) {
-                    $(this).addClass('WIDE')
+                    $(this).addClass('grid-top-border-wide')
                 }
             }
 
