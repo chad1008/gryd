@@ -1025,11 +1025,20 @@ button#wp-custom-header-video-button:focus {
 .archive .hentry,
 .blog .hentry,
 .search-results .hentry {
-    width: 50vw;
-    height: 28vw;
+    width: 100vw;
+    height: 56vw;
     float: left;
     margin-bottom: 0;
     position: relative;
+}
+
+@media screen and ( min-width: 600px ) {
+    .archive .hentry,
+    .blog .hentry,
+    .search-results .hentry {
+        width: 50vw;
+        height: 28vw;
+    }
 }
 
 .entry-thumbnail {
@@ -1101,12 +1110,23 @@ button#wp-custom-header-video-button:focus {
     transition: .5s;
 }
 
-.without-featured-image:nth-of-type(odd) + .without-featured-image {
-    border-left: 1px solid rgba(0, 0, 0, .5);
+.grid-top-border-narrow {
+    border-top: 1px solid rgba(0, 0, 0, .5);
 }
 
-.without-featured-image + .hentry + .without-featured-image {
-    border-top: 1px solid rgba(0, 0, 0, .5);
+@media screen and ( min-width: 600px ) {
+    .grid-top-border-narrow {
+        border-top: 0;
+    }
+
+    .grid-top-border-wide,
+    .grid-top-border-wide.grid-top-border-narrow {
+        border-top: 1px solid rgba(0, 0, 0, .5);
+    }
+
+    .without-featured-image:nth-of-type(odd) + .without-featured-image {
+        border-left: 1px solid rgba(0, 0, 0, .5);
+    }
 }
 
 #content {
