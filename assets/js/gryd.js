@@ -1,6 +1,6 @@
 (function ($) {
 
-    function boardwalk_colors() {
+    function gryd_grid_borders() {
 
         var has_thumbs = [];
 
@@ -31,8 +31,8 @@
         });
     }
 
-    $(window).load(boardwalk_colors);
+    $(window).load(gryd_grid_borders);
 
-    $(document).on('post-load', boardwalk_colors);
+    $(document).on('post-load', gryd_grid_borders);
 
 })(jQuery);
