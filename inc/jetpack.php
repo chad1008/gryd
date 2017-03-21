@@ -24,7 +24,7 @@ function gryd_jetpack_setup() {
 			'sidebar-3',
 			'sidebar-4',
 		),
-		'posts_per_page' => 4,
+		'posts_per_page' => 10,
 	) );
 
 	// Add theme support for Responsive Videos.
