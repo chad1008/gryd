@@ -1229,6 +1229,7 @@ button#wp-custom-header-video-button:focus {
 
 #infinite-handle span {
     padding: 0;
+    background-color: transparent;
 }
 
 #infinite-handle span button,
