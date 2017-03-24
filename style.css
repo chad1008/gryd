@@ -658,16 +658,22 @@ table {
     display: block;
     float: left;
     width: 100%;
-    position: fixed;
+    position: absolute;
     text-align: center;
     z-index: 2;
-    padding: 0 20px;
     background-color: rgba(0, 0, 0, .3);
     text-shadow: #333 2px 2px 2px;
 }
 
-#top-menu-wrap {
-    margin-bottom: -6px;
+@media screen and ( min-width: 600px ) {
+    .main-navigation {
+        position: fixed;
+    }
+
+    #top-menu-wrap {
+        margin-bottom: -6px;
+
+    }
 }
 
 .main-navigation a,
@@ -696,6 +702,7 @@ table {
     list-style: none;
     margin: 0;
     padding-left: 0;
+    text-align: left;
 }
 
 .main-navigation ul ul {
@@ -741,9 +748,11 @@ table {
     top: 0;
 }
 
-.main-navigation li {
-    float: left;
-    position: relative;
+@media screen and ( min-width: 600px ) {
+    .main-navigation li {
+        float: left;
+        position: relative;
+    }
 }
 
 .main-navigation a {
@@ -752,6 +761,23 @@ table {
 }
 
 /* Small menu. */
+
+.menu-toggle,
+.menu-toggle:hover,
+.menu-toggle:focus,
+.menu-toggle:active {
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #dbdbdb;
+    text-shadow: none;
+    font-size: 1em;
+    outline: none;
+    padding: .6em 1em;
+}
+
 .menu-toggle,
 .main-navigation.toggled ul {
     display: block;
@@ -761,6 +787,10 @@ table {
     content: "\2630";
     display: inline-block;
     margin-right: 5px;
+}
+
+.toggled #top-menu-wrap {
+    border-top: 1px solid #dbdbdb;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -1249,6 +1279,7 @@ button#wp-custom-header-video-button:focus {
     background-color: #dbdbdb;
     color: #535353;
 }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
